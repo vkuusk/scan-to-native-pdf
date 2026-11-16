@@ -1,0 +1,14 @@
+# Page types for nakamichi-bx-300 (see AGENTS.md). Pages not listed are decided automatically:
+# converted as text unless they look like a drawing (little ink inside OCR text blocks).
+[pages]
+# schematics and PCB layouts: kept as scanned pages for now (a dedicated approach is still to be designed)
+drawing = [21, 26]   # 21: Main P.C.B. Ass'y (text ink 1%); 26: schematic diagram (text ink 4%)
+# scan_only = []     # keep the scanned page unchanged (cover, photos, ...)
+# text = []          # convert even though it looks like a drawing
+
+[cleanup]
+level = 1            # picture clean-up (0 = pictures exactly as scanned, 1 = despeckle + 1-bit line art)
+# level_0 = []       # pages whose pictures stay exactly as scanned
+
+[tables]
+# keep_as_image = [] # pages whose tables stay pictures instead of being rendered as text

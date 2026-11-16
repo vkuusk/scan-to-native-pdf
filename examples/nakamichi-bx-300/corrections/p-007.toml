@@ -1,0 +1,27 @@
+# OCR corrections for nakamichi-bx-300 page 7 (3.6 - 3.11), checked against the scan.
+# match = how the block's OCR text starts; see scripts/convert_page.py for all options.
+# "\n" in text = line break as printed (used where the scan hyphenates a word).
+
+[[block]]   # hyphenated as printed: "instal-/lation"
+match = "(3) If torque is out of the range"
+text = "(3) If torque is out of the range, correct it by changing the instal-\nlation point of the Pressure Roller Spring."
+
+[[block]]   # hyphenated as printed: "mechan-/ical"
+match = "(1) Set the Pitch Control Knob"
+text = "(1) Set the Pitch Control Knob on the Front Panel to its mechan-\nical center position."
+
+[[block]]   # OCR lost "(2) FLOIL GB-TS-1" and moved "Diamond Oil (EP56)" in here
+match = "Washer between Reel Hub"
+text = "(2) FLOIL GB-TS-1\nWasher between Reel Hub Ass'y and Back Tension Spring"
+
+[[block]]   # OCR truncated "(EP56)"
+match = "(3) Diamond Oil (EP"
+text = "(3) Diamond Oil (EP56)\nReel Hub Shaft"
+
+[[block]]   # "Minatoku" -> "Minato-ku", line breaks as printed
+match = "(a) Molykote"
+text = "(a) Molykote ® Grease (X5-6020)\nDowcorning Co., Ltd., 1-15-1 Nishishinbashi, Minato-\nku, Tokyo, Japan"
+
+[[block]]   # "Choku" -> "Chuo-ku", line breaks as printed
+match = "(d) Anderol 456"
+text = "(d) Anderol 456\nToyo Kokusai Oil Co., Ltd., 3-3-5 Hatchobori, Chuo-\nku, Tokyo, Japan"

@@ -1,3 +1,14 @@
+# this project
+# your manuals (scans, outputs, corrections) stay local
+manuals/
+# examples: settings and corrections are shared; the scan (copyrighted, download it) and
+# everything generated are not
+examples/*/input/*
+!examples/*/input/.keep
+examples/*/output/*
+!examples/*/output/.keep
+!examples/*/output/survey.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -218,3 +229,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# local server state (pid, log)
+.run/

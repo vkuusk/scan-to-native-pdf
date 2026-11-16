@@ -1,0 +1,20 @@
+[project]
+name = "scan-to-native-pdf"
+version = "0.1.0"
+description = "Rebuild scanned pages as native PDFs with real, selectable text, using PaddleOCR-VL."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "mlx-vlm>=0.3.11",
+    "paddleocr[doc-parser]>=3.7.0",
+    "paddlepaddle==3.2.1",
+    "reportlab>=5.1.0",
+    "setuptools>=84.2.1",
+]
+
+[[tool.uv.index]]
+name = "paddle-cpu"
+url = "https://www.paddlepaddle.org.cn/packages/stable/cpu/"
+explicit = true
+
+[tool.uv.sources]
+paddlepaddle = { index = "paddle-cpu" }

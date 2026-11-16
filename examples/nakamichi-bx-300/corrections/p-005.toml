@@ -1,0 +1,35 @@
+# OCR corrections for nakamichi-bx-300 page 5 (3. Mechanical Adjustment), checked against the scan.
+# match = how the block's OCR text starts; see scripts/convert_page.py for all options.
+
+[[block]]   # OCR dropped "the": scan says "push both of slide knobs"
+match = "(5) Set the cassette deck in Play mode."
+text = '(5) Set the cassette deck in Play mode. Check to insure whether the Beacons Playback Head "Upper" or "Lower" and Record Head "Upper" or "Lower" are illuminating. In order not to give damages onto the head surfaces, push both of slide knobs of the Gauge to away from the heads, then return them to the original place to be in contact with record head and playback head surfaces after Play mode is securely locked.'
+
+[[block]]   # label misread as "i6)"
+match = "i6) Beacon Playback Head"
+text = '(6) Beacon Playback Head "Lower" will light on when height adjustment screw (PH) turned counterclockwise but Playback Head "Upper" when clockwise. Adjust so that both "Upper" and "Lower" will light on even when you move the slide knob away from the heads and then return it to the original place.'
+
+[[block]]   # "ensure" -> "insure" as printed
+match = "(8) Set the cassette deck in Stop mode"
+text = "(8) Set the cassette deck in Stop mode and fit both of the serrated Height Gears. Then set the cassette deck again in Play mode and insure all of the 4 Beacons are illuminating. If not, (4) through (7) will have to be repeated till satisfactory results are obtained."
+
+[[block]]   # OCR box and text missed the last scanned line
+match = "(2) Move Record Head Indicator"
+lines_below = 1
+text = '(2) Move Record Head Indicator and Playback Head Indicator to the direction of arrow mark "A" with your finger tip and then set the cassette deck in Play mode. Then slowly release the Indicators and insure whether each of the Indicators is in contact with record and playback heads.'
+
+[[block]]   # "ensure" -> "insure"
+match = '(4) Check to ensure whether the line "P"'
+text = '(4) Check to insure whether the line "P" on the Playback Head Indicator locates between the 2 lines on the Record Head Indicator, thus check can be made on record head stroke.'
+
+[[block]]   # "ensure" -> "insure"
+match = "(c) Check to ensure whether the erase head"
+text = "(c) Check to insure whether the erase head surface is aligned with red line on the EH Stroke Indicator. If not, adjust the erase head stroke by loosening screw A that assembles erase head with erase head plate."
+
+[[block]]   # "ensure" -> "insure"
+match = "(c) Slide the Supply Tape Guide Check Bar"
+text = "(c) Slide the Supply Tape Guide Check Bar down against the supply tape guide, and check to insure that the Supply Tape Guide Check Bar is accepted by the supply tape guide."
+
+[[block]]   # "ensure" -> "insure"
+match = "(c) Slide the Take-up Tape Guide Check Bar"
+text = "(c) Slide the Take-up Tape Guide Check Bar down against the take-up tape guide, and check to insure that the Take-up Tape Guide Check Bar is accepted by the take-up tape guide."

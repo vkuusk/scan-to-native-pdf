@@ -1,0 +1,33 @@
+# typography for nakamichi-bx-300; written by init_fonts.py, edit as needed
+# measured on pages 5,6,7; sizes in pt
+
+[font]
+family = "century"   # one of: century, times, palatino, bookman, helvetica, helvetica-narrow, avantgarde, courier
+
+[body]
+size = 7.69
+pitch = 8.00
+indent = 19.2
+
+[heading]
+size = 7.06
+bold = true
+
+[subheading]
+size = 6.78
+bold = true
+
+[title]
+size = 9.5
+bold = false
+
+[caption]
+size = 7.58
+bold = false
+
+[page_number]
+size = 8.66
+bold = true
+
+[calibration]
+font_match = { "century" = 0.5870, "times" = 0.5408, "palatino" = 0.5518, "bookman" = 0.5257, "helvetica" = 0.4687, "helvetica-narrow" = 0.3344, "avantgarde" = 0.4404, "courier" = 0.4388 }

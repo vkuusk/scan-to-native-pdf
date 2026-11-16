@@ -1,0 +1,7 @@
+[[block]]   # the HiFi Engine logo: keep it as a picture, not text
+match = "Hifi ENGINE"
+image = true
+
+[[block]]   # OCR added a stray "i"
+match = "iFor more Hi-Fi manuals"
+text = "For more Hi-Fi manuals and set-up information please visit www.hifiengine.com"
